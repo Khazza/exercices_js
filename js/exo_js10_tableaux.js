@@ -23,60 +23,60 @@
 // ------------------------------------------------------------------------------------------
 
 // Exercice 2 -----------------------------
-// Fonction pour lire un entier au clavier
-function GetInteger(promptMessage) {
-    return parseInt(prompt(promptMessage));
-}
+// // Fonction pour lire un entier au clavier
+// function GetInteger(promptMessage) {
+//     return parseInt(prompt(promptMessage));
+// }
 
-// Fonction pour créer et initialiser le tableau
-function InitTab() {
-    var n = GetInteger("Entrez le nombre de postes souhaité :");
-    var tab = new Array(n);
-    return tab;
-}
+// // Fonction pour créer et initialiser le tableau
+// function InitTab() {
+//     var n = GetInteger("Entrez le nombre de postes souhaité :");
+//     var tab = new Array(n);
+//     return tab;
+// }
 
-// Fonction pour saisir les différents postes du tableau
-function SaisieTab(tab) {
-    for (var i = 0; i < tab.length; i++) {
-        tab[i] = GetInteger("Entrez le contenu du poste " + (i + 1) + " :");
-    }
-}
+// // Fonction pour saisir les différents postes du tableau
+// function SaisieTab(tab) {
+//     for (var i = 0; i < tab.length; i++) {
+//         tab[i] = GetInteger("Entrez le contenu du poste " + (i + 1) + " :");
+//     }
+// }
 
-// Fonction pour afficher tous les postes du tableau
-function AfficheTab(tab) {
-    console.log("Contenu du tableau :");
-    for (var i = 0; i < tab.length; i++) {
-        console.log("tab[" + i + "] = " + tab[i]);
-    }
-}
+// // Fonction pour afficher tous les postes du tableau
+// function AfficheTab(tab) {
+//     console.log("Contenu du tableau :");
+//     for (var i = 0; i < tab.length; i++) {
+//         console.log("tab[" + i + "] = " + tab[i]);
+//     }
+// }
 
-// Fonction pour afficher le contenu d'un poste de tableau dont le rang est saisi au clavier
-function RechercheTab(tab) {
-    var i = GetInteger("Entrez le rang du poste à afficher (Le premier poste est le n°0):");
-    console.log("Contenu de tab[" + i + "] : " + tab[i]);
-}
+// // Fonction pour afficher le contenu d'un poste de tableau dont le rang est saisi au clavier
+// function RechercheTab(tab) {
+//     var i = GetInteger("Entrez le rang du poste à afficher (Le premier poste est le n°0):");
+//     console.log("Contenu de tab[" + i + "] : " + tab[i]);
+// }
 
-// Fonction pour afficher le maximum et la moyenne des postes
-function InfoTab(tab) {
-    var max = tab[0];
-    var somme = 0;
-    for (var i = 0; i < tab.length; i++) {
-        somme += tab[i];
-        if (tab[i] > max) {
-            max = tab[i];
-        }
-    }
-    var moy = somme / tab.length;
-    console.log("Maximum : " + max);
-    console.log("Moyenne : " + moy);
-}
+// // Fonction pour afficher le maximum et la moyenne des postes
+// function InfoTab(tab) {
+//     var max = tab[0];
+//     var somme = 0;
+//     for (var i = 0; i < tab.length; i++) {
+//         somme += tab[i];
+//         if (tab[i] > max) {
+//             max = tab[i];
+//         }
+//     }
+//     var moy = somme / tab.length;
+//     console.log("Maximum : " + max);
+//     console.log("Moyenne : " + moy);
+// }
 
-// Programme principal
-var monTab = InitTab();
-SaisieTab(monTab);
-AfficheTab(monTab);
-RechercheTab(monTab);
-InfoTab(monTab);
+// // Programme principal
+// var monTab = InitTab();
+// SaisieTab(monTab);
+// AfficheTab(monTab);
+// RechercheTab(monTab);
+// InfoTab(monTab);
 
 // ------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------
