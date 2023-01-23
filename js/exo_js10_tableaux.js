@@ -52,7 +52,7 @@ function AfficheTab(tab) {
 
 // Fonction pour afficher le contenu d'un poste de tableau dont le rang est saisi au clavier
 function RechercheTab(tab) {
-    var i = GetInteger("Entrez le rang du poste à afficher :");
+    var i = GetInteger("Entrez le rang du poste à afficher (Le premier poste est le n°0):");
     console.log("Contenu de tab[" + i + "] : " + tab[i]);
 }
 
