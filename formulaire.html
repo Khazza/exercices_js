@@ -1,56 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Exercice formulaire</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Formulaire de contact -->
-<form>
-    <!-- Champ pour la société -->
-    <label for="societe">Société:</label>
-    <input type="text" id="societe" name="societe">
-  
-    <!-- Champ pour la personne à contacter -->
-    <label for="personne_a_contacter">Personne à contacter:</label>
-    <input type="text" id="personne_a_contacter" name="personne_a_contacter">
-  
-    <!-- Champ pour l'adresse de l'entreprise (textarea) -->
-    <label for="adresse_entreprise">Adresse de l'entreprise:</label>
-    <textarea id="adresse_entreprise" name="adresse_entreprise"></textarea>
-  
-    <!-- Champ pour le code postal -->
-    <label for="code_postal">Code Postal:</label>
-    <input type="text" id="code_postal" name="code_postal">
-  
-    <!-- Champ pour la ville -->
-    <label for="ville">Ville:</label>
-    <input type="text" id="ville" name="ville">
-  
-    <!-- Champ pour l'e-mail -->
-    <label for="email">E-mail:</label>
-    <input type="email" id="email" name="email">
-  
-    <!-- Champ pour le téléphone -->
-    <label for="telephone">Téléphone:</label>
-    <input type="tel" id="telephone" name="telephone">
-  
-    <!-- Liste déroulante pour l'environnement technique du projet -->
-    <label for="environnement_technique">Sélectionnez l'environnement technique du projet:</label>
-    <select id="environnement_technique" name="environnement_technique">
-      <option value="option1">Option 1</option>
-      <option value="option2">Option 2</option>
-      <option value="option3">Option 3</option>
-    </select>
-    <br>
-    <label for="environnement_technique_text">Environnement technique selectionné:</label>
-    <input type="text" id="environnement_technique_text" name="environnement_technique_text" disabled>
-  
-    <!-- Bouton pour soumettre le formulaire -->
-    <input type="submit" value="Envoyer">
-  </form>
-  <script src="js/exo_js17_formulaires.js"></script>
-</body>
+    <form>
+      <legend>Vos coordonnées :</legend>
+      <br>
+      <div class="oblig">* Ces zones sont obligatoires</div>
+      <!-- Champ pour la société -->
+      <label for="societe">Société:*</label>
+      <input type="text" id="societe" name="societe" />
+      <br />
+
+      <!-- Champ pour la personne à contacter -->
+      <label for="personne_a_contacter">Personne à contacter:*</label>
+      <input
+        type="text"
+        id="personne_a_contacter"
+        name="personne_a_contacter"
+      />
+      <br />
+
+      <!-- Champ pour l'adresse de l'entreprise -->
+      <label for="adresse_entreprise">Adresse de l'entreprise:</label>
+      <textarea id="adresse_entreprise" name="adresse_entreprise"></textarea>
+      <br />
+
+      <!-- Champ pour le code postal -->
+      <label for="code_postal">Code Postal:*</label>
+      <input type="text" id="code_postal" name="code_postal" />
+      <br />
+
+      <!-- Champ pour la ville -->
+      <label for="ville">Ville:*</label>
+      <input type="text" id="ville" name="ville" />
+      <br />
+
+      <!-- Champ pour l'e-mail -->
+      <label for="email">E-mail:*</label>
+      <input type="email" id="email" name="email" />
+      <br />
+
+      <!-- Champ pour le téléphone -->
+      <label for="telephone">Téléphone:</label>
+      <input type="tel" id="telephone" name="telephone" />
+      <br />
+
+      <!-- Liste déroulante pour l'environnement technique du projet -->
+      <label for="environnement_technique"
+        >Sélectionnez l'environnement technique du projet:</label
+      >
+      <select id="environnement_technique" name="environnement_technique">
+        <option value="option1">Choisissez</option>
+        <option value="Access">Access</option>
+        <option value="Java">Java</option>
+        <option value="Delphi">Delphi</option>
+        <option value="Windev">Windev</option>
+        <option value="Visual Basic">Visual Basic</option>
+        <option value="Power builder">Power builder</option>
+        <option value="Internet">Internet</option>
+        <option value="Intranet">Intranet</option>
+        <option value="Windows NT">Windows NT</option>
+        <option value="Unix">Unix</option>
+        <option value="SQL Server">SQL Server</option>
+        <option value="Oracle">Oracle</option>
+        <option value="Autres...">Autres...</option>
+      </select>
+      <br />
+      <label for="environnement_technique_text"
+        >Environnement technique selectionné:</label
+      >
+      <textarea id="environnement_technique_text" name="environnement_technique_text"></textarea>
+      <br />
+      <!-- Bouton pour soumettre le formulaire -->
+      <input type="submit" value="Envoyer" />
+      <input type="reset" value="Annuler" />
+    </form>
+    <script src="js/exo_js17_formulaires.js"></script>
+  </body>
 </html>

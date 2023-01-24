@@ -1,0 +1,38 @@
+/* 
+   Centrer le formulaire horizontalement 
+*/
+form {
+  margin: 0 auto;
+  width: 80%; /* Fixer la largeur du formulaire à 80% de la page */
+}
+/*
+
+/*
+   Ajuster la marge entre les champs de saisie 
+*/
+input {
+  margin: 10px 0;
+}
+
+.oblig {
+  color: brown;
+}
+.required {
+  border: 1px solid red;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  display: inline-block;
+  margin: 0 10;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  input.required {
+    border-color: red;
+  }
